@@ -1,7 +1,11 @@
 # 🦁 YOLOv8s Animal Detection on 21-Class Custom Dataset
 
 This repository presents the training and evaluation of a **YOLOv8s** object detection model on a **custom 21-class animal dataset**, including species like **Cattle, Goat, Sheep, Chicken, Duck**, and more. The goal is accurate localization and classification of diverse animals in natural environments.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CIc1J-woBaxiHKT4OCKy6klOyl6fez9J?usp=sharing)
+
 >  "Cattle", "Goat", "Sheep", "Chicken", "Duck", "Pig", "Horse", "Rabbit", "Tiger", "Leopard", "Fox", "Bear", "Snake", "Lizard", "Dog", "Eagle", "Mouse", "Monkey", "Porcupine", "Elephant", "Reptile"
+
 ---
 
 ## 📁 Dataset Overview
@@ -9,11 +13,11 @@ This repository presents the training and evaluation of a **YOLOv8s** object det
 - **Number of Classes**: 24 animal species
 - **Label Format**: YOLO (normalized `[x_center, y_center, width, height]`)
 - **Annotation Distribution**:
-  
+
 ![Label Distribution and Box Positions](/Performance-yolov8s/labels.jpg)
 
 - **Pairwise Feature Distribution (Correlogram)**:
-  
+
 ![Bounding Box Correlogram](/Performance-yolov8s/labels_correlogram.jpg)
 
 ---
@@ -95,5 +99,3 @@ Visual comparisons of ground truth and predictions:
 - Train on **YOLOv8m/l/x** for improved accuracy
 - Integrate **real-time inference pipeline**
 - Experiment with **augmentation and hyperparameter optimization**
-
----
